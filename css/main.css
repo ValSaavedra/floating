@@ -1,10 +1,11 @@
 body{
-	background: #E9967A
+	background: #ecf7fb;
 }
 
 ul{
 	list-style-type: none;
 	margin:0;
+	padding: 0;
 	overflow: hidden;
 	background-color: #2c818b;
 	}
@@ -17,9 +18,11 @@ li a{
 	display: block;
 	color: white;
 	text-align: center;
+	padding: 14px 16px;
 	text-decoration: none;/*quita la linea bajo el enlace y da color*/
 	font-family: "Baloo Paaji";
 }
+
 li a:hover:not(.active) {
 	background-color:#ff7673;
 }
@@ -29,10 +32,11 @@ li a:hover:not(.active) {
 }
 
 section {
-	/*overflow: auto;*/
+	overflow: auto;
 	margin-top:20px;
 	background-color:#2c818b;
 	padding:20px;
+	display: inline-block;
 }
 
 .imagenes {
@@ -42,22 +46,31 @@ section {
 	height: 220px;
 	background-color: #ecf7fb;
 	padding: 10px;
+	display: inline-block;
 }
+
 p{
 	margin: 10px;
 	font-family: "Baloo Paaji";
 }
-/*disposición de las img*/
 
+#container-imagenes{
+	display: inline-block;
+}
+
+/*disposición de las img*/
 .img_2{
 	float: :left;
 	margin: 20px;
+	display: inline-block;
+
 }
 
 /* alineacion divs y la img q contiene*/
 .img_3{
 	float:right;
 	margin: 20px;
+	display: inline-block;
 }
 /*divs class derechos*/
 .derecho{
@@ -65,25 +78,46 @@ p{
 	float: right;
 	background: #ecf7fb;
 	margin-left: 20px;
+	display: inline-block;
 }
 
 .derecho img{
 	float: left;
 	padding: 20px;
+	display: inline-block;
 }
+
+/*divs class derechos*/
 .izquierdo{
 	width: 400px;
 	float: right;
-	background: #ecf7fb
+	background: #ecf7fb;
 	padding:20px;
 	margin-right: 20px;
+	display: inline-block;
 }
 
 .izquierdo img{
 	float: right;
 	padding: 20px;
+	display: inline-block;
 }
+
 .fotos p{
 	font-family: "Prompt";
 	padding: 20px;
+	display: inline-block;
+}
+
+/*estilos del footer*/
+.img_footer{
+	width: 10%;
+	float: right;
+}
+
+footer{
+	margin-top: 20px;
+	background-color: #2c818b;
+	overflow: auto;
+	padding: 30px;
 }
